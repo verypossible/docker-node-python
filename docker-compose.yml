@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node-10.15.0-python-3.7.2-alpine:
+    image: verypossible/node-python:n10.15.0-p3.7.2-alpine
+    build:
+      context: .
+      args:
+        NODE_IMAGE_TAG: 10.15.0-alpine
+        PYTHON_VERSION: 3.7.2
